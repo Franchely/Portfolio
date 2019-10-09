@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import Navbar from "./NavBar"
 
 
 class About extends Component {
@@ -8,9 +9,13 @@ class About extends Component {
         return (
 
             <div className="about-div">
-                <h1>About</h1>
-                    <div>
-                       
+                <Navbar></Navbar>
+                <h1 className="page-title">About</h1>
+                    <div className='text'>
+                       I am a Minneapolis-based full-stack developer specializing in JavaScript, Ruby, and their respective frameworks.
+                       <br></br>
+
+
                     </div>
             </div>
         )
