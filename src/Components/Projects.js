@@ -6,7 +6,13 @@ class Projects extends Component {
 
         return (
 
-            <div className="projects-div"></div>
+            <div className="projects-div">
+
+                <h1>Projects</h1>
+                <div>
+                    
+                </div>
+            </div>
         )
     }
 }
