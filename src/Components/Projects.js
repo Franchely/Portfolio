@@ -7,7 +7,6 @@ class Projects extends Component {
 
         return (
             <div className="projects-page">
-                <Navbar></Navbar>
 
                 <h1 className="page-title">Projects</h1>
             <div className="projects-div">
