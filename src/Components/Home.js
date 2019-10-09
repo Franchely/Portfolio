@@ -8,7 +8,9 @@ class Home extends Component {
         return (
 
             <div className="home-div">
-                
+                <div className="name">
+                    Franchely <br></br>Portorreal
+                </div>
             </div>
         )
     }

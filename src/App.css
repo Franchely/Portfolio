@@ -12,3 +12,14 @@
   
 }
 
+.home-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.name {
+  background-color: black;
+  color: white;
+  font-size: 80px;
+}
+

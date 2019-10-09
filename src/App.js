@@ -5,6 +5,7 @@ import NavBar from "../src/Components/NavBar"
 import Projects from "../src/Components/Projects"
 import Contact from "../src/Components/Contact"
 import About from "../src/Components/About"
+import Home from "../src/Components/Home"
 
 
 class App extends Component {
@@ -14,9 +15,9 @@ class App extends Component {
     return(
       <div className="app">
         <BrowserRouter>
-            <NavBar></NavBar>
+            {/* <NavBar></NavBar> */}
         
-         
+          <Route exact path="/" component={Home}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
