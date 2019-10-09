@@ -10,20 +10,21 @@ class NavBar extends Component {
         return (
 
             <div className="navbar">
-              Name 
+              
                 <div className="buttons-div">
 
-                    <button>
-                        <NavLink to="/about">About</NavLink>
-                    </button>
-
-                    <button>
-                       <NavLink to="/projects">Projects</NavLink>
-                    </button>
-
-                    <button>
-                        <NavLink to="/contact">Contact</NavLink>
-                    </button>
+                   
+                        <NavLink to="/" className="navbar-button">Home</NavLink>
+                   
+                    
+                        <NavLink to="/about" className="navbar-button">About</NavLink>
+                    
+                    
+                       <NavLink to="/projects" className="navbar-button">Projects</NavLink>
+                    
+                    
+                        <NavLink to="/contact" className="navbar-button">Contact</NavLink>
+                   
 
                 </div>
              
