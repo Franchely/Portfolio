@@ -10,6 +10,14 @@ import Home from "../src/Components/Home"
 
 class App extends Component {
 
+  showNavbar = () => {
+    if (window.location.pathname === "/") {
+        return null 
+    } else {
+        return <NavBar></NavBar>
+    }
+}
+
   render() {
 
     return(
@@ -17,7 +25,7 @@ class App extends Component {
         <BrowserRouter>
             <NavBar></NavBar>
         
-          <Route exact path="/" component={Home}></Route>
+          <Route exact path="/" render={() => <Home showNavbar={this.showNavbar}></Home>}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/projects" component={Projects}></Route>
           <Route path="/contact" component={Contact}></Route>
