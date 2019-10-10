@@ -9,7 +9,7 @@ class About extends Component {
         return (
 
             <div className="about-div">
-                <Navbar></Navbar>
+                {this.props.showNavbar()}
                 <h1 className="page-title">About</h1>
                     <div className='text'>
                        I am a Minneapolis-based full-stack developer specializing in JavaScript, Ruby, and their respective frameworks.

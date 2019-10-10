@@ -7,6 +7,7 @@ class Contact extends Component {
         return (
 
             <div className="contact-div">
+                {this.props.showNavbar()}
                 <h1>Contact</h1>
                 <div className="contact-div">
                         <div>
