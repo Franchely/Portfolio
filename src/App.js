@@ -23,12 +23,10 @@ class App extends Component {
     return(
       <div className="app">
         <BrowserRouter>
-            <NavBar></NavBar>
-        
           <Route exact path="/" render={() => <Home showNavbar={this.showNavbar}></Home>}></Route>
-          <Route path="/about" component={About}></Route>
-          <Route path="/projects" component={Projects}></Route>
-          <Route path="/contact" component={Contact}></Route>
+          <Route path="/about" render={() => <About showNavbar={this.showNavbar}></About>}></Route>
+          <Route path="/projects" render={() => <Projects showNavbar={this.showNavbar}></Projects>}></Route>
+          <Route path="/contact" render={() => <Contact showNavbar={this.showNavbar}></Contact>}></Route>
         </BrowserRouter>
       </div>
     )
