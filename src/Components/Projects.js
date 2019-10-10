@@ -6,8 +6,10 @@ class Projects extends Component {
     render() {
 
         return (
-            <div className="projects-page">
 
+            <div>
+                {this.props.showNavbar()}
+            <div className="projects-page">
                 <h1 className="page-title">Projects</h1>
             <div className="projects-div">
                 <div className="project-div">
@@ -52,6 +54,8 @@ class Projects extends Component {
                     <h3>Video Demo</h3>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/9_LR8jbqsKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
+            </div>
+
             </div>
 
             </div>
